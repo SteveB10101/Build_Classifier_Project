@@ -1,0 +1,7 @@
+File "predict.5.py", line 172, in load_checkpoint
+    model_chosen_arch.load_state_dict(checkpoint['state_dict'])
+  File "/opt/conda/lib/python3.6/site-packages/torch/nn/modules/module.py", line 721, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for ResNet:
+          Missing key(s) in state_dict: "fc.weight", "fc.bias", "classifier.hidden_layers.0.weight", "classifier.hidden_layers.0.bias", "classifier.output.weight", "classifier.output.bias". 
+          Unexpected key(s) in state_dict: "fc.hidden_layers.0.weight", "fc.hidden_layers.0.bias", "fc.output.weight", "fc.output.bias". 
